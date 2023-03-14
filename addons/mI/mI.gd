@@ -14,6 +14,7 @@ func _enter_tree():
 	add_custom_type("mI_Indicator", "Polygon2D", 	preload("mI_Indicator.gd"), preload("mI_checkbox.svg"))
 	add_custom_type("mI_Rotate",    "Sprite", 		preload("mI_Indicator_rotate.gd"), preload("fan.png"))
 	add_custom_type("mI_ControlPopup", "Control", 	preload("mi_ControlPopup.gd"), preload("mI_Popup.png"))
+	add_custom_type("mI_Level", "ProgressBar", preload("res://addons/mI/mI_Indicator_Level.gd"), preload("res://addons/mI/mI_Label.svg"))
 	print_debug("microInterface addon activated")
 
 	pass
@@ -27,6 +28,7 @@ func _exit_tree():
 	remove_custom_type("mI_Indicator")
 	remove_custom_type("mI_Rotate")
 	remove_custom_type("mI_ControlPopup")
+	remove_custom_type("mI_Level")
 	print_debug("microInterface addon deactivated")
 	
 	pass

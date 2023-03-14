@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://addons/mI/mI_Button.gd" type="Script" id=1]
 [ext_resource path="res://addons/mI/images/drawing-on.svg" type="Texture" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://addons/mI/images/drawing_indicator_circle.svg" type="Texture" id=6]
 [ext_resource path="res://addons/mI/mI_Indicator_rotate.gd" type="Script" id=7]
 [ext_resource path="res://addons/mI/images/fan.svg" type="Texture" id=8]
+[ext_resource path="res://addons/mI/mI_Label.gd" type="Script" id=9]
+[ext_resource path="res://addons/mI/mI_Indicator_Level.gd" type="Script" id=10]
+[ext_resource path="res://addons/mI/mI_progress.tres" type="Theme" id=11]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 0.997373, 1 )
@@ -67,3 +70,20 @@ margin_left = 48.1264
 margin_top = 312.0
 margin_right = 96.1264
 margin_bottom = 360.0
+
+[node name="mI_Label" type="Label" parent="."]
+margin_left = 40.0
+margin_top = 384.0
+margin_right = 457.0
+margin_bottom = 440.0
+theme = ExtResource( 3 )
+text = "Temperature = %s"
+script = ExtResource( 9 )
+Tag = "TEMPERATURE"
+
+[node name="mI_Level" type="ProgressBar" parent="mI_Label"]
+margin_top = 45.0
+margin_right = 401.0
+margin_bottom = 101.0
+theme = ExtResource( 11 )
+script = ExtResource( 10 )

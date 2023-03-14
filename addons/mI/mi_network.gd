@@ -3,7 +3,7 @@ signal Radio(Tag, Value)
 
 # The URL we will connect to
 #export var websocket_url = "ws://192.168.43.171:7777"
-export var websocket_url = "ws://espressif.local:7777"
+export var websocket_url = "ws://192.168.0.110:7777"
 onready var controls_members = get_tree().get_nodes_in_group("controls")
 
 # Our WebSocketClient instance
