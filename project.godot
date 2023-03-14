@@ -9,18 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "",
-"class": "GitAPI",
-"language": "NativeScript",
-"path": "res://addons/godot-git-plugin/git_api.gdns"
-}, {
 "base": "Timer",
 "class": "Timer01",
 "language": "GDScript",
 "path": "res://addons/mI/Timer01.gd"
 } ]
 _global_script_class_icons={
-"GitAPI": "",
 "Timer01": ""
 }
 
