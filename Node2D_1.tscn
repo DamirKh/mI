@@ -47,7 +47,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_editor_description_": "uI Indicator"
 }
-Tag = "SW1"
+Tag = "LED"
 OFF_color = Color( 0, 1, 0, 0.141176 )
 Undefined_color = Color( 1, 1, 1, 0.501961 )
 
@@ -57,10 +57,10 @@ rotation = -1.94953
 scale = Vector2( 0.161082, 0.161082 )
 texture = ExtResource( 8 )
 script = ExtResource( 7 )
-Tag = "SW1"
+Tag = "LED"
 OFF_color = Color( 0, 1, 0, 1 )
 Rotation_Speed = -270
-Color_change_time = 5.0
+Color_change_time = 0.5
 
 [node name="ColorPickerButton" type="ColorPickerButton" parent="."]
 margin_left = 48.1264

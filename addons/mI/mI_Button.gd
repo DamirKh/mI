@@ -9,7 +9,7 @@ var T := Timer.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	self.add_to_group('control', true)
 	self.rect_min_size = self.rect_size
 	connect("pressed", self, "clicked")
 	self.hint_tooltip = Tag
@@ -25,7 +25,7 @@ func _ready():
 
 
 func _enter_tree():
-	self.add_to_group('control', true)
+
 	if not Tag:
 		var P = self.get_parent()
 		while P:

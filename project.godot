@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="mI"
-run/main_scene="res://mI_Control.tscn"
+run/main_scene="res://Node2D_1.tscn"
 config/icon="res://icon.png"
 
 [autoload]
